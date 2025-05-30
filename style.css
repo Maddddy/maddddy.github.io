@@ -1,20 +1,20 @@
 :root {
-  --background: #000000;
-  --text: #ffffff;
-  --accent: #00f0ff;
-  --subtext: #222;
-  --card-bg: #111111;
+  --background: #2e1f1b;         /* Dark wood tone fallback */
+  --text: #1b110e;               /* Deep brown text */
+  --accent: #b35c1e;             /* Warm rustic orange */
+  --subtext: #80624d;            /* Muted brown for tags */
+  --card-bg: #f5e6d4;            /* Light wood card background */
   --font-size-base: 18px;
   --font-size-large: 22px;
   --font-size-header: 28px;
-  --neon-shadow: 0 0 2.5px #00f0ff, 0 0 5px #00f0ff; /* 75% reduced */
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--background);
+  background: url('wood-texture.jpg') repeat center center fixed;
+  background-size: cover;
   color: var(--text);
 }
 
@@ -47,13 +47,11 @@ body {
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--accent); /* reduced */
-  box-shadow: var(--neon-shadow);
+  border: 2px solid var(--accent);
 }
 
-h1, h2, h3, .section-heading {
-  color: #ffffff;
-  text-shadow: var(--neon-shadow);
+h1, h2, h3, .section-heading, p {
+  color: #1b110e;
 }
 
 h1, h2 {
@@ -67,14 +65,13 @@ h3 {
 .section-heading {
   font-size: 45px;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--accent); /* reduced */
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 0.5rem;
 }
 
 p {
   font-size: 20px;
   line-height: 1.6;
-  color: #ffffff;
 }
 
 .project-card {
@@ -83,17 +80,16 @@ p {
   padding: 1rem;
   display: flex;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 5px rgba(0, 240, 255, 0.2); /* reduced */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 }
 
 .project-img {
   width: 215px;
-  height: 180px;
+  height: 215px;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 1.5rem;
-  box-shadow: var(--neon-shadow);
 }
 
 .project-details {
@@ -108,26 +104,23 @@ p {
 }
 
 .tag {
-  background-color: var(--accent);
-  color: #000;
+  background-color: var(--subtext);
+  color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
   font-size: 0.9rem;
   margin-right: 0.5rem;
   display: inline-block;
-  box-shadow: var(--neon-shadow);
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
   font-weight: bold;
-  text-shadow: var(--neon-shadow);
 }
 
 a:hover {
   text-decoration: underline;
-  color: #ffffff;
 }
 
 .contact {
@@ -135,18 +128,17 @@ a:hover {
   margin-top: 3rem;
   padding: 1rem;
   font-size: 1.8rem;
-  color: #ffffff;
+  color: var(--text);
 }
 
 .contact a {
   margin: 0 1rem;
   color: var(--accent);
   transition: color 0.3s ease;
-  text-shadow: var(--neon-shadow);
 }
 
 .contact a:hover {
-  color: #ffffff;
+  color: var(--text);
 }
 
 @media (max-width: 768px) {
