@@ -7,7 +7,7 @@
   --font-size-base: 18px;
   --font-size-large: 22px;
   --font-size-header: 28px;
-  --neon-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  --neon-shadow: 0 0 2.5px #00f0ff, 0 0 5px #00f0ff; /* 75% reduced */
 }
 
 body {
@@ -47,34 +47,34 @@ body {
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--accent);
+  border: 1px solid var(--accent); /* reduced */
   box-shadow: var(--neon-shadow);
 }
 
-h1, h2 {
-  color: var(--accent);
-  font-size: 50px;
+h1, h2, h3, .section-heading {
+  color: #ffffff;
   text-shadow: var(--neon-shadow);
+}
+
+h1, h2 {
+  font-size: 50px;
 }
 
 h3 {
-  color: var(--accent);
   font-size: 36px;
-  text-shadow: var(--neon-shadow);
-}
-
-p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--text);
 }
 
 .section-heading {
   font-size: 45px;
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 1px solid var(--accent); /* reduced */
   padding-bottom: 0.5rem;
-  text-shadow: var(--neon-shadow);
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
 .project-card {
@@ -83,7 +83,7 @@ p {
   padding: 1rem;
   display: flex;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 240, 255, 0.2); /* reduced */
   flex-wrap: wrap;
 }
 
@@ -135,6 +135,7 @@ a:hover {
   margin-top: 3rem;
   padding: 1rem;
   font-size: 1.8rem;
+  color: #ffffff;
 }
 
 .contact a {
