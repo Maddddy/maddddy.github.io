@@ -15,8 +15,10 @@ body {
   padding: 0;
   background: url('bg.png') repeat center center fixed;
   background-size: cover;
+  background-color: #2e1f1b; /* fallback dark wood color */
   color: var(--text);
 }
+
 
 .container {
   max-width: 1000px;
